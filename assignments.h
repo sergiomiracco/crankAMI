@@ -1,42 +1,42 @@
-
-enum struct key : char
+struct key
 {
-  _ENTER =        KEY_RETURN,
-  _LEFT =         KEY_LEFT_ARROW,
-  _RIGHT =        KEY_RIGHT_ARROW,
-  _UP =           KEY_UP_ARROW,
-  _DOWN =         KEY_DOWN_ARROW,
-  _BACK =         KEY_ESC,
-  _HOME =         'H',
-  _PHONE =        'P',
-  _CALL_END =     'O',
-  _PLAY =         'X',
-  _PAUSE =        'C',
-  _PREV_TRACK =   'V',
-  _NEXT_TRACK =   'N',
-  _TOGGLE_PLAY =  'B',
-  _VOICE_CMD =    'M',
-  _WHEEL_LEFT =   '1',
-  _WHEEL_RIGHT =  '2',
-}
+static const char  _ENTER =        KEY_RETURN;
+static const char  _LEFT =         KEY_LEFT_ARROW;
+static const char  _RIGHT =        KEY_RIGHT_ARROW;
+static const char  _UP =           KEY_UP_ARROW;
+static const char  _DOWN =         KEY_DOWN_ARROW;
+static const char  _BACK =         KEY_ESC;
+static const char  _HOME =         'H';
+static const char  _PHONE =        'P';
+static const char  _CALL_END =     'O';
+static const char  _PLAY =         'X';
+static const char  _PAUSE =        'C';
+static const char  _PREV_TRACK =   'V';
+static const char  _NEXT_TRACK =   'N';
+static const char  _TOGGLE_PLAY =  'B';
+static const char  _VOICE_CMD =    'M';
+static const char  _WHEEL_LEFT =   '1';
+static const char  _WHEEL_RIGHT =  '2';
+};
 
-enum struct input_pin : uint8_t 
+
+struct input_pin 
 {
-  _ENTER =        0,
-  _LEFT =         1,
-  _RIGHT =        2,
-  _UP =           3,
-  _DOWN =         4,
-  _BACK =         5,
-  _HOME =         6,
-  _PHONE =        7,
-  _CALL_END =     8,
-  _PLAY =         9,
-  _PAUSE =        10,
-  _PREV_TRACK =   11,
-  _NEXT_TRACK =   12,
-  _TOGGLE_PLAY =  13,
-  _VOICE_CMD =    14,
-  _WHEEL_LEFT =   15,
-  _WHEEL_RIGHT =  16,
-}
+static const uint8_t  _ENTER =        0;
+static const uint8_t  _LEFT =         1;
+static const uint8_t  _RIGHT =        2;
+static const uint8_t  _UP =           3;
+static const uint8_t  _DOWN =         4;
+static const uint8_t  _BACK =         5;
+static const uint8_t  _HOME =         6;
+static const uint8_t  _PHONE =        7;
+static const uint8_t  _CALL_END =     8;
+static const uint8_t  _PLAY =         9;
+static const uint8_t  _PAUSE =        10;
+static const uint8_t  _PREV_TRACK =   11;
+static const uint8_t  _NEXT_TRACK =   12;
+static const uint8_t  _TOGGLE_PLAY =  13;
+static const uint8_t  _VOICE_CMD =    14;
+static const uint8_t  _WHEEL_LEFT =   15;
+static const uint8_t  _WHEEL_RIGHT =  16;
+};
