@@ -5,12 +5,11 @@
 
 void configInputPins()
 {
-    
-    pinMode(static_cast<int>(input_pins::_ENTER       ), INPUT_PULLUP);
-    pinMode(static_cast<int>(input_pins::_LEFT        ), INPUT_PULLUP);
+    for(Assignment & a : keyboard) {
+        pinMode( a.pin , INPUT_PULLUP);
+    }
 
 }
-
 
 void setup() {
 
@@ -18,7 +17,6 @@ void setup() {
 
     //initialize inputs
     configInputPins();
-
    
 }
 
@@ -27,7 +25,7 @@ void loop() {
     for(Assignment & a : keyboard)
     {
         if(a.fired){
-            Keyboard.write(a.k);
+            Keyboard.write(a.key);
             a.fired = false;
         } else {
             bool newVal = digitalRead(a.pin);

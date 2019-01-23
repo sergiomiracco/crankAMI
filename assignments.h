@@ -4,14 +4,29 @@ struct Assignment {
 
     bool fired;
     bool oldVal;
-    keys key;
-    input_pins pin;
+    const uint16_t key;
+    const uint8_t pin;
 
 }; 
 
 Assignment keyboard[] = {
-    { 0, 1, keys::_ENTER, input_pins::_ENTER},
-    { 0, 1, keys::_LEFT, input_pins::_LEFT}    
+    { 0, 1, KEY_RETURN,      0 },
+    { 0, 1, KEY_LEFT_ARROW,  1 },
+    { 0, 1, KEY_RIGHT_ARROW, 2 },
+    { 0, 1, KEY_UP_ARROW,    3 },
+    { 0, 1, KEY_DOWN_ARROW,  4 },
+    { 0, 1, KEY_ESC,         5 },
+    { 0, 1, 'H',             6 },
+    { 0, 1, 'P',             7 },
+    { 0, 1, 'O',             8 },
+    { 0, 1, 'X',             9 },
+    { 0, 1, 'C',            10 },
+    { 0, 1, 'V',            11 },
+    { 0, 1, 'N',            12 },
+    { 0, 1, 'B',            13 },
+    { 0, 1, 'M',            14 },
+    { 0, 1, '1',            15 },
+    { 0, 1, '2',            16 }
 };
 
 enum struct keys : uint16_t
