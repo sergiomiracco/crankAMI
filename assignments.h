@@ -1,5 +1,20 @@
 #include <stdint.h>
 
+struct Assignment {
+
+    bool fired;
+    bool oldVal;
+
+    const key k;
+    const input_pin pin;
+
+}; 
+
+Assignment keyboard[] = {
+    { 0, 1, key::_ENTER, input_pin::_ENTER},
+    { 0, 1, key::_LEFT, input_pin::_LEFT}    
+};
+
 enum struct key : uint16_t
 {
   _ENTER =        KEY_RETURN,
