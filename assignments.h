@@ -4,7 +4,7 @@ struct Assignment {
 
     bool fired;
     bool oldVal;
-    const uint16_t key;
+    const uint8_t key;
     const uint8_t pin;
 
 }; 

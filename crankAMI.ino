@@ -1,6 +1,6 @@
-#include <Arduino.h>
 
 #include "Keyboard.h"
+
 #include "assignments.h"
 
 void configInputPins()
@@ -11,24 +11,22 @@ void configInputPins()
 
 }
 
-void setup() {
+void setup() {    
+  
+  //initialize inputs
+  configInputPins();
 
-    //initialize inputs
-    configInputPins();
+  Keyboard.begin();
 
-    Keyboard.begin();
 }
 
 void loop() {
 
-    for(Assignment & a : keyboard)
-    {
-       
+   for(Assignment & a : keyboard)
+   {
         if(a.fired){
 
-            //Keyboard.write(a.key);
-            //Keyboard.press(a.key);
-            Keyboard.write( a.key ); 
+            Keyboard.write(a.key); 
                         
             //Keyboard.releaseAll();
             a.fired = false;
@@ -44,5 +42,3 @@ void loop() {
     }
 
 }
-
-
